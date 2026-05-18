@@ -1,59 +1,119 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-  <meta charset="UTF-8">
-  <title>HAPPYpoint</title>
+<meta charset="UTF-8">
+<title>HAPPYpoint</title>
 
-  <style>
-    body {
-      font-family: Arial;
-      text-align: center;
-      background: #f5f5f5;
-      margin: 0;
-      padding: 0;
-    }
+<style>
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #0f172a;
+  color: white;
+}
 
-    .box {
-      margin-top: 80px;
-    }
+/* เมนูบน */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 30px;
+  background: #111827;
+}
 
-    h1 {
-      color: #ff4d6d;
-      font-size: 40px;
-    }
+.nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
 
-    p {
-      color: #555;
-    }
+/* ส่วนหัว */
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(135deg,#ff4d6d,#3b82f6);
+}
 
-    a {
-      display: block;
-      margin: 10px auto;
-      width: 200px;
-      padding: 10px;
-      background: #4CAF50;
-      color: white;
-      text-decoration: none;
-      border-radius: 8px;
-    }
+/* กล่องเนื้อหา */
+.section {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
 
-    a:hover {
-      background: #45a049;
-    }
-  </style>
+.card {
+  background: #1e293b;
+  padding: 20px;
+  margin: 15px 0;
+  border-radius: 12px;
+}
+
+/* ปุ่ม */
+.btn {
+  display: inline-block;
+  padding: 10px 15px;
+  background: #3b82f6;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+/* footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #111827;
+  margin-top: 30px;
+}
+</style>
 
 </head>
 
 <body>
 
-  <div class="box">
-    <h1>🎉 HAPPYpoint</h1>
-    <p>รวมลิงก์ร้านค้าและโซเชียลของเรา</p>
-
-    <a href="https://facebook.com" target="_blank">Facebook</a>
-    <a href="https://tiktok.com" target="_blank">TikTok</a>
-    <a href="https://shopee.com" target="_blank">Shop</a>
+<!-- เมนู -->
+<div class="nav">
+  <div><b>HAPPYpoint</b></div>
+  <div>
+    <a href="#">Home</a>
+    <a href="#">Shop</a>
+    <a href="#">Contact</a>
   </div>
+</div>
+
+<!-- ส่วนหัว -->
+<div class="hero">
+  <h1>🎉 HAPPYpoint</h1>
+  <p>รวมลิงก์ร้านค้า โซเชียล และข้อมูลของเรา</p>
+</div>
+
+<!-- เนื้อหา -->
+<div class="section">
+
+  <h2>📱 Social Media</h2>
+  <div class="card">
+    Facebook / TikTok / Instagram
+    <br><br>
+    <a class="btn" href="#">เข้าไปดู</a>
+  </div>
+
+  <h2>🛒 Shop</h2>
+  <div class="card">
+    ร้านค้าออนไลน์ของ HAPPYpoint
+    <br><br>
+    <a class="btn" href="#">ไปที่ร้าน</a>
+  </div>
+
+  <h2>📞 Contact</h2>
+  <div class="card">
+    ติดต่อเรา: happypoint@gmail.com
+  </div>
+
+</div>
+
+<!-- footer -->
+<footer>
+  © 2026 HAPPYpoint
+</footer>
 
 </body>
 </html>
